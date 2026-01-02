@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nullverse</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#05060d" />
+</head>
+
+<body>
+  <div id="cockpit">
+    <div id="cockpit-frame"></div>
+
+    <div id="glass">
+      <main id="universe">
+
+        <header>
+          <h1>NULLVERSE</h1>
+          <p class="subtitle">Existence je dost</p>
+        </header>
+
+        <section id="ship">
+          <label>Stav lodi</label>
+          <select id="shipState">
+            <option value="stable">🟢 stabilní</option>
+            <option value="damaged">🟡 poškozená</option>
+            <option value="emergency">🔴 nouzový režim</option>
+          </select>
+        </section>
+
+        <section id="planets">
+          <h2>Planety</h2>
+          <button id="addPlanet">+ nová planeta</button>
+          <ul id="planetList"></ul>
+        </section>
+
+        <section id="notes">
+          <h2>Poznámky</h2>
+          <textarea id="noteField"
+            placeholder="Můžeš jen být. Psát není povinné."></textarea>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
